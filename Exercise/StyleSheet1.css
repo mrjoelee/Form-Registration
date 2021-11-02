@@ -1,0 +1,17 @@
+﻿body {
+    background-color:#3a2778;
+}
+
+h1, label{
+    font-display:auto;
+}
+
+.input{
+
+    background-color:white;
+    border:groove;
+}
+
+.registration {
+
+}

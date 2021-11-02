@@ -1,0 +1,87 @@
+<html>
+    <head>
+        <title>Sign Up to Learn How to Code!</title>
+        <link href="StyleSheet1.css" rel="stylesheet" />
+  
+    </head>
+    <body>
+        <div class="registration">
+        <h1>Registration</h1>
+        <form action="registration.php">
+            <div class="input">
+                <div>
+                    <label> First Name </label></br>
+                    <input type="text" placeholder="First Name" id="First" />
+                </div>
+                <div>
+                    <label> Last Name </label></br>
+                    <input type="text" placeholder="Last name" id="Last" />
+                </div>
+                <div>
+                    <label> Email Address </label></br>
+                    <input type="text" placeholder="Email Address" id="Email" />
+                </div>
+                <div>
+                    <label> Company Name </label></br>
+                    <input type="text" placeholder="Company Name" id="Company" />
+                </div>
+                <div>
+                    <label> Role </label></br>
+                    <div>
+                        <select name="Role" id="role">
+                            <option value="Student">Student </option>
+                            <option value="Software Engineer">Software Engineer </option>
+                            <option value="FreeLancer">Freelancer </option>
+                            <option value="Unemployed">Unemployed </option>
+                            <option value="Other">Other</option>
+                        </select>
+                    </div>
+                </div>
+                <div>
+                    <label> Continent </label></br>
+                    <div>
+                        <select name="Continent" id="continent">
+                            <option value="North America">North America </option>
+                            <option value="Europe">Europe</option>
+                            <option value="Asia">Asia </option>
+                            <option value="Africa">Africa </option>
+                            <option value="South America">South America</option>
+                            <option value="Antarctica">Antarctica</option>
+                            <option value="Australia">Australia</option>
+                        </select>
+                    </div>
+                </div>
+                <div>
+                    <label> Select a language </label></br>
+                    <div>
+                        <select name="Language" id="language">
+                            <option value="C#">C#</option>
+                            <option value="PHP">PHP</option>
+                            <option value="JAVA">JAVA </option>
+                            <option value="C++">C++ </option>
+                            <option value="JSCript">JSCript</option>
+                            <option value="HTML">HTML</option>
+                        </select>
+                    </div>
+                    <div>
+                      <button type="button" onclick="Submit();">Submit</button>
+                    </div>
+                </div>
+               </div>
+        </form>
+        </div>
+        <script>
+            function Submit() {
+                let firstName = document.getElementById("First").value;
+                let lastName = document.getElementById("Last").value;
+                let Email = document.getElementById("Email").value;
+                let Company = document.getElementById("Company").value;
+                let role = document.getElementById("role").value;
+                let continent = document.getElementById("continent").value;
+                let language = document.getElementById("language").value;
+                alert(firstName + lastName + Email + Company + role + continent +language);
+            }
+        </script>
+    </body>
+
+</html>
